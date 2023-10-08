@@ -5,10 +5,10 @@ int main(){
     int gcdValue , a , b;
     //<------------ get a and b value to the users ------------------>
     printf("Enter a and b values :");
-    scanf("%d%d",&a&b);
+    scanf("%d%d",&a,&b);
     //<--------------------- calling a function and store that returned value for printing purpose ---------------------------->
     gcdValue = greatestCommonDivisor(a,b);
-    printf("greatestCommonDivisor is : %d",x);
+    printf("greatestCommonDivisor is : %d",gcdValue);
     return 0;
 }
 //<------------------- this function return the greatestCommonDivisor ------------------>
