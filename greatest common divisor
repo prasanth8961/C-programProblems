@@ -1,0 +1,21 @@
+//<----------- this header file used for printing statements -------------->
+#include<stdio.h>
+// <---------------- program is start form main function, a good practice by using int main function with return 0.----------------->
+int main(){
+    int gcdValue , a , b;
+    //<------------ get a and b value to the users ------------------>
+    printf("Enter a and b values :");
+    scanf("%d%d",&a&b);
+    //<--------------------- calling a function and store that returned value for printing purpose ---------------------------->
+    gcdValue = greatestCommonDivisor(a,b);
+    printf("greatestCommonDivisor is : %d",x);
+    return 0;
+}
+//<------------------- this function return the greatestCommonDivisor ------------------>
+int greatestCommonDivisor(int a, int b){
+    if(a==0){
+        return b;
+    }else{
+        greatestCommonDivisor(b%a,b);
+    }
+}
